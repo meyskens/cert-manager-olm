@@ -52,7 +52,7 @@ spec:
               serviceAccountName: cert-manager-operator
               containers:
               - name: cert-manager-operator
-                image: registry.connect.redhat.com/jetstack/cert-manager-operator:v0.15.0-ubi
+                image: registry.connect.redhat.com/jetstack/cert-manager-operator:v0.15.0
                 env:
                 - name: POD_NAME
                   valueFrom:
