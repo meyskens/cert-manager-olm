@@ -9,7 +9,7 @@ metadata:
     capabilities: Full Lifecycle
     categories: Security
     certified: 'true'
-    containerImage: registry.connect.redhat.com/jetstack/cert-manager-operator:v0.15.0
+    containerImage: registry.connect.redhat.com/jetstack/cert-manager-operator:v0.15.0-ubi.1
     repository: https://github.com/jetstack/cert-manager
   name: cert-manager-operator.v0.15.0
 spec:
@@ -52,7 +52,7 @@ spec:
               serviceAccountName: cert-manager-operator
               containers:
               - name: cert-manager-operator
-                image: registry.connect.redhat.com/jetstack/cert-manager-operator:v0.15.0-ubi
+                image: registry.connect.redhat.com/jetstack/cert-manager-operator:v0.15.0-ubi.1
                 env:
                 - name: POD_NAME
                   valueFrom:
